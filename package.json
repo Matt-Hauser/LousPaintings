@@ -1,0 +1,29 @@
+{
+  "name": "loutest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource-variable/montserrat": "^5.0.3",
+    "@fontsource/roboto": "^5.0.2",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.3",
+    "next": "^13.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-lightbox-pro": "^1.0.10",
+    "react-multi-carousel": "^2.8.4",
+    "yet-another-react-lightbox": "^3.10.1"
+  }
+}
