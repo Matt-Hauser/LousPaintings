@@ -5,32 +5,34 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import Image from "next/image";
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+
 export default function Gallery() {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(-1);
 
   const paintings = [
-    "./IMG_0512.jpg",
-    "./IMG_0486.jpg",
-    "./IMG_0564.jpg",
-    "./IMG_0001.jpg",
-    "./IMG_0345.jpg",
-    "./IMG_1700.jpg",
-    "./IMG_1329.jpg",
-    "./IMG_1726.jpg",
-    "./IMG_0906.jpg",
-    "./IMG_0621.jpg",
-    "./IMG_0501.jpg",
-    "./IMG_0508.jpg",
-    "./IMG_3531.jpg",
-    "./IMG_0009.jpg",
-    "./IMG_2018.jpg",
-    "./IMG_0483.jpg",
-    "./IMG_1926.jpg",
-    "./IMG_6875.jpg",
+    "/IMG_0512.jpg",
+    "/IMG_0486.jpg",
+    "/IMG_0564.jpg",
+    "/IMG_0001.jpg",
+    "/IMG_0345.jpg",
+    "/IMG_1700.jpg",
+    "/IMG_1329.jpg",
+    "/IMG_1726.jpg",
+    "/IMG_0906.jpg",
+    "/IMG_0621.jpg",
+    "/IMG_0501.jpg",
+    "/IMG_0508.jpg",
+    "/IMG_3531.jpg",
+    "/IMG_0009.jpg",
+    "/IMG_2018.jpg",
+    "/IMG_0483.jpg",
+    "/IMG_1926.jpg",
+    "/IMG_6875.jpg",
   ];
 
   const gallery = paintings.map((painting, idx) => {
@@ -41,22 +43,28 @@ export default function Gallery() {
             width: "250px",
             height: "300px",
             margin: "20px",
-            width: "fitContent",
           }}
         >
           <CardActionArea>
             <CardMedia
               style={{
+                position: "relative",
                 display: "flex",
                 justifyContent: "center",
+
+                height: "250px",
+
+                marginLeft: "20px",
+                marginRight: "20px",
               }}
             >
-              <img
+              <Image
                 onClick={() => setIndex(idx)}
                 className="painting"
                 src={painting}
-                height={"250vw"}
-                style={{ margin: "20px" }}
+                fill="true"
+                objectFit="contain"
+                style={{ marginTop: "20px" }}
               />
             </CardMedia>
             <CardContent style={{ textAlign: "center" }}></CardContent>

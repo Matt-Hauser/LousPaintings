@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "@fontsource/roboto";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const responsive = {
@@ -35,36 +36,61 @@ export default function Home() {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-evenly",
-          margin: "10px",
-          marginTop: "0",
+          justifyContent: "",
+
+          marginTop: "",
+          position: "relative",
+          width: "100vw",
         }}
       >
         {/* <h1>Home!</h1> */}
-        <div style={{ position: "", flex: "0 0 100vw" }}>
-          <img
-            style={{ width: "100%", marginTop: "100px" }}
+        <div
+          style={{
+            width: "100vw",
+            height: "100vh",
+
+            marginTop: "",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <Image
+            fill="true"
+            style={{
+              objectFit: "contain",
+              objectPosition: "top",
+              marginTop: "100px",
+              zIndex: "0",
+            }}
             src="./photoframe.svg"
-          ></img>
-          <Link style={{ textDecoration: "none" }} href="/order" passHref>
+          ></Image>
+          {/* <Link
+            style={{
+              zIndex: "5",
+
+              textDecoration: "none",
+            }}
+            href="/order"
+            passHref
+          >
             <Button
               variant="contained"
               style={{
-                height: "5%",
-                width: "12%",
-                fontSize: "2vh",
                 fontWeight: "bold",
                 backgroundColor: "#F7DC6F",
                 position: "relative",
-                left: "28%",
+                top: "0",
+                left: "0",
+
                 fontFamily: "",
                 color: "black",
-                bottom: "48%",
+                zIndex: "5",
               }}
             >
               Learn More
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div

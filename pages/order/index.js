@@ -64,7 +64,7 @@ export default function Order() {
         <Typography
           style={{
             position: "relative",
-            textAlign: "center",
+            textAlign: "",
             flexBasis: "100%",
 
             marginLeft: "20px",
