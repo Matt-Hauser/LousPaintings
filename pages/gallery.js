@@ -63,8 +63,8 @@ export default function Gallery() {
                 className="painting"
                 src={painting}
                 fill="true"
-                objectFit="contain"
-                style={{ marginTop: "20px" }}
+                sizes=""
+                style={{ marginTop: "20px", objectFit: "contain" }}
               />
             </CardMedia>
             <CardContent style={{ textAlign: "center" }}></CardContent>
@@ -82,12 +82,14 @@ export default function Gallery() {
           alignItems: "center",
 
           justifyContent: "center",
-          backgroundImage: `url("../orderbg.svg")`,
+          backgroundImage: `url("../orderbg.png")`,
           backgroundAttachment: "fixed",
           backgroundSize: "contain",
         }}
       >
-        <img
+        <Image
+          width={700}
+          height={350}
           style={{ marginTop: "60px", marginBottom: "-20px" }}
           src="../Gallery-2.svg"
         />

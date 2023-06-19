@@ -2,6 +2,7 @@ import { Box, Button, Link, Typography } from "@mui/material";
 import "@fontsource/roboto/500.css";
 import "@fontsource-variable/montserrat";
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -23,7 +24,7 @@ export default function About() {
         width={"50vw"}
         height={"92vh"}
       >
-        <img height={200} src="./louBio.jpg"></img>
+        <Image height={200} width={200} src="/louBio.jpg"></Image>
         <Typography fontFamily={"georgia"} variant="h2">
           Louis Farace
         </Typography>

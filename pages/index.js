@@ -35,37 +35,45 @@ export default function Home() {
       <div
         style={{
           display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "",
-
-          marginTop: "",
-          position: "relative",
-          width: "100vw",
+          flexDirection: "column",
+          justifyContent: "space-evenly",
         }}
       >
-        {/* <h1>Home!</h1> */}
         <div
           style={{
-            width: "100vw",
-            height: "100vh",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "",
 
             marginTop: "",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
+            position: "relative",
+            width: "100vw",
+            height: "100vh",
           }}
         >
-          <Image
-            fill="true"
+          {/* <h1>Home!</h1> */}
+          <div
             style={{
-              objectFit: "contain",
-              objectPosition: "top",
-              marginTop: "100px",
-              zIndex: "0",
+              width: "100vw",
+              height: "100vh",
+
+              marginTop: "",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
             }}
-            src="./photoframe.svg"
-          ></Image>
-          {/* <Link
+          >
+            <Image
+              fill="true"
+              style={{
+                objectFit: "cover",
+                objectPosition: "top",
+                marginTop: "50px",
+                zIndex: "0",
+              }}
+              src="/photoframe1.png"
+            ></Image>
+            {/* <Link
             style={{
               zIndex: "5",
 
@@ -91,104 +99,121 @@ export default function Home() {
               Learn More
             </Button>
           </Link> */}
+          </div>
         </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-evenly",
-          margin: "40px",
-          marginTop: "0",
-        }}
-      >
-        <img
-          style={{ margin: "10px", flex: "0 0 40vw", borderRadius: "20px" }}
-          src="./catdemo.svg"
-        ></img>
-        <img
+        <div
           style={{
-            margin: "10px",
-
-            flex: "0 0 40vw",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-evenly",
+            margin: "40px",
+            marginTop: "100px",
           }}
-          src="./framefriends.svg"
-        ></img>
-      </div>
-      <div
-        style={{
-          justifyContent: "center",
-        }}
-      >
-        <Carousel autoPlay={true} infinite={true} responsive={responsive}>
-          <div
+        >
+          <img
+            style={{ margin: "10px", flex: "0 0 40vw", borderRadius: "20px" }}
+            src="./catdemo.svg"
+          ></img>
+          <img
             style={{
-              display: "flex",
-              justifyContent: "center",
+              margin: "10px",
+
+              flex: "0 0 40vw",
             }}
-          >
-            <img
-              // style={{ marginLeft: "5vw", marginRight: "5vw" }}
-              src="./carousel1.png"
-            ></img>
-          </div>
-
-          <div
-            style={{ margin: "0px", display: "flex", justifyContent: "center" }}
-          >
-            <img
-              // style={{ marginLeft: "5vw", marginRight: "5vw" }}
-              src="./carousel2.png"
-            ></img>
-          </div>
-
-          <div
-            style={{ margin: "0px", display: "flex", justifyContent: "center" }}
-          >
-            <img
-              // style={{ marginLeft: "5vw", marginRight: "5vw" }}
-              src="./carousel3.png"
-            ></img>
-          </div>
-          <div
-            style={{ margin: "0px", display: "flex", justifyContent: "center" }}
-          >
-            <img
-              // style={{ marginLeft: "5vw", marginRight: "5vw" }}
-              src="./carousel4.png"
-            ></img>
-          </div>
-          <div
-            style={{ margin: "0px", display: "flex", justifyContent: "center" }}
-          >
-            <img
-              // style={{borderRadius: "20px", marginLeft: "5vw", marginRight: "5vw" }}
-              src="./carousel5.png"
-            ></img>
-          </div>
-        </Carousel>
-      </div>
-
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-evenly",
-          margin: "40px",
-        }}
-      >
-        <img
-          style={{ margin: "10px", flex: "0 0 40vw" }}
-          src="./paintedmemories.svg"
-        ></img>
-        <img
+            src="./framefriends.svg"
+          ></img>
+        </div>
+        <div
           style={{
-            margin: "10px",
-            borderRadius: "20px",
-            flex: "0 0 40vw",
+            justifyContent: "center",
           }}
-          src="./weddingdemo.svg"
-        ></img>
+        >
+          <Carousel autoPlay={true} infinite={true} responsive={responsive}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                // style={{ marginLeft: "5vw", marginRight: "5vw" }}
+                src="./carousel1.png"
+              ></img>
+            </div>
+
+            <div
+              style={{
+                margin: "0px",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                // style={{ marginLeft: "5vw", marginRight: "5vw" }}
+                src="./carousel2.png"
+              ></img>
+            </div>
+
+            <div
+              style={{
+                margin: "0px",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                // style={{ marginLeft: "5vw", marginRight: "5vw" }}
+                src="./carousel3.png"
+              ></img>
+            </div>
+            <div
+              style={{
+                margin: "0px",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                // style={{ marginLeft: "5vw", marginRight: "5vw" }}
+                src="./carousel4.png"
+              ></img>
+            </div>
+            <div
+              style={{
+                margin: "0px",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                // style={{borderRadius: "20px", marginLeft: "5vw", marginRight: "5vw" }}
+                src="./carousel5.png"
+              ></img>
+            </div>
+          </Carousel>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-evenly",
+            margin: "40px",
+          }}
+        >
+          <img
+            style={{ margin: "10px", flex: "0 0 40vw" }}
+            src="./paintedmemories.svg"
+          ></img>
+          <img
+            style={{
+              margin: "10px",
+              borderRadius: "20px",
+              flex: "0 0 40vw",
+            }}
+            src="./weddingdemo.svg"
+          ></img>
+        </div>
       </div>
     </>
   );

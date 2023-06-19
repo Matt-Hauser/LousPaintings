@@ -146,7 +146,7 @@ export default function Step4() {
       style={{
         zIndex: "0",
         position: "relative",
-        backgroundImage: `url("../orderbg.svg")`,
+        backgroundImage: `url("../orderbg.png")`,
         backgroundSize: "cover",
         height: "100vh",
         top: "50px",

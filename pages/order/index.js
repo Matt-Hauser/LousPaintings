@@ -9,7 +9,7 @@ export default function Order() {
       style={{
         zIndex: "0",
         position: "relative",
-        backgroundImage: `url("../orderbg.svg")`,
+        backgroundImage: `url("../orderbg.png")`,
         backgroundSize: "cover",
         height: "100vh",
 

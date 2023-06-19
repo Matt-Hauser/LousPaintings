@@ -1,8 +1,6 @@
 .painting {
   transition: transform ease-in-out 0.2s;
-  box-shadow: 10px, 5px, 5px black;
 }
 .painting:hover {
   transform: scale(1.05);
-  box-shadow: 300px, 150px, 150px black;
 }
