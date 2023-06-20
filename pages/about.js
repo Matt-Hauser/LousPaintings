@@ -24,7 +24,7 @@ export default function About() {
         width={"50vw"}
         height={"92vh"}
       >
-        <Image height={200} width={200} src="/louBio.jpg"></Image>
+        <Image priority height={200} width={200} src="/louBio.jpg"></Image>
         <Typography fontFamily={"georgia"} variant="h2">
           Louis Farace
         </Typography>
@@ -78,7 +78,7 @@ export default function About() {
             color: "#555555",
             fontFamily: "Montserrat Variable",
             lineHeight: "23px",
-            textAlign: "center",
+            textAlign: "",
           }}
           variant="h7"
         >

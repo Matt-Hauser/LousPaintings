@@ -15,24 +15,24 @@ export default function Gallery() {
   const [index, setIndex] = useState(-1);
 
   const paintings = [
-    "/IMG_0512.jpg",
-    "/IMG_0486.jpg",
-    "/IMG_0564.jpg",
-    "/IMG_0001.jpg",
-    "/IMG_0345.jpg",
-    "/IMG_1700.jpg",
-    "/IMG_1329.jpg",
-    "/IMG_1726.jpg",
-    "/IMG_0906.jpg",
-    "/IMG_0621.jpg",
-    "/IMG_0501.jpg",
-    "/IMG_0508.jpg",
-    "/IMG_3531.jpg",
-    "/IMG_0009.jpg",
-    "/IMG_2018.jpg",
-    "/IMG_0483.jpg",
-    "/IMG_1926.jpg",
-    "/IMG_6875.jpg",
+    "/IMG_0512_optimized.jpg",
+    "/IMG_0486_optimized.jpg",
+    "/IMG_0564_optimized.jpg",
+    "/IMG_0001_optimized.jpg",
+    "/IMG_0345_optimized.jpg",
+    "/IMG_1700_optimized.jpg",
+    "/IMG_1329_optimized.jpg",
+    "/IMG_1726_optimized.jpg",
+    "/IMG_0906_optimized.jpg",
+    "/IMG_0621_optimized.jpg",
+    "/IMG_0501_optimized.jpg",
+    "/IMG_0508_optimized.jpg",
+    "/IMG_3531_optimized.jpg",
+    "/IMG_0009_optimized.jpg",
+    "/IMG_2018_optimized.jpg",
+    "/IMG_0483_optimized.jpg",
+    "/IMG_1926_optimized.jpg",
+    "/IMG_6875_optimized.jpg",
   ];
 
   const gallery = paintings.map((painting, idx) => {
@@ -88,6 +88,7 @@ export default function Gallery() {
         }}
       >
         <Image
+          priority
           width={700}
           height={350}
           style={{ marginTop: "60px", marginBottom: "-20px" }}

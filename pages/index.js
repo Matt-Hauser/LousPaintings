@@ -65,6 +65,7 @@ export default function Home() {
           >
             <Image
               fill="true"
+              priority
               style={{
                 objectFit: "cover",
                 objectPosition: "top",
