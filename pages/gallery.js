@@ -62,6 +62,7 @@ export default function Gallery() {
                 onClick={() => setIndex(idx)}
                 className="painting"
                 src={painting}
+                key={idx}
                 fill="true"
                 sizes=""
                 style={{ marginTop: "20px", objectFit: "contain" }}

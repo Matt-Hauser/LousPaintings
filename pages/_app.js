@@ -17,16 +17,17 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Context from "../context/context";
 import "../stepone.css";
+import TopNav from "../components/TopNav";
 
 export default function App(props) {
   return (
     <>
-      <AppBar
+      {/* <AppBar
         style={{ height: "100px", backgroundColor: "black" }}
         position="fixed"
       >
         <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
-          {/* <Typography variant="h5">Nav Bar!</Typography> */}
+        
           <img
             style={{ position: "relative", top: "5px" }}
             height={200}
@@ -71,7 +72,7 @@ export default function App(props) {
             </ButtonGroup>
           </Box>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
       {/* <AppBar
         style={{
           top: "120px",
@@ -91,6 +92,7 @@ export default function App(props) {
           Refer a friend to recieve a 10% discount!
         </Typography>
       </AppBar> */}
+      <TopNav />
       <Context>
         <props.Component></props.Component>
       </Context>
@@ -101,8 +103,9 @@ export default function App(props) {
           top: "auto",
           bottom: "0px",
           height: "10vh",
+          maxWidth: "120%",
         }}
-        position="relative"
+        position="static"
       >
         <Toolbar
           style={{ display: "flex", gap: "5px", justifyContent: "center" }}

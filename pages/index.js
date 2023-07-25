@@ -35,6 +35,7 @@ export default function Home() {
       <div
         style={{
           display: "flex",
+
           flexDirection: "column",
           justifyContent: "space-evenly",
         }}
@@ -209,6 +210,7 @@ export default function Home() {
           <img
             style={{
               margin: "10px",
+
               borderRadius: "20px",
               flex: "0 0 40vw",
             }}

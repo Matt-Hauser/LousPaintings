@@ -319,7 +319,7 @@ export default function Step1() {
           <IconButton
             onClick={removePets}
             style={{
-              fontSize: "5vh",
+              fontSize: "40px",
               position: "relative",
               bottom: "20%",
               left: "50%",
@@ -374,7 +374,7 @@ export default function Step1() {
           <IconButton
             onClick={removePeople}
             style={{
-              fontSize: "5vh",
+              fontSize: "40px",
               position: "relative",
               bottom: "20%",
               left: "55%",

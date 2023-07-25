@@ -293,51 +293,63 @@ export default function Step4() {
         >
           {" "}
         </Typography> */}
-          <div
-            style={{
-              flexBasis: "100%",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              rowGap: "5px",
-              marginBottom: "15px",
-            }}
-          >
-            <TextField
-              style={{ width: "50%", flexBasis: "51%" }}
-              id="standard-basic"
-              label="First Name"
-              variant="standard"
-            />
-            <TextField
-              style={{ width: "50%", flexBasis: "51%" }}
-              id="standard-basic"
-              label="Last Name"
-              variant="standard"
-            />
-            <TextField
-              style={{ width: "50%", flexBasis: "51%" }}
-              id="standard-basic"
-              label="Email Address"
-              variant="standard"
-            />
-            <TextField
-              style={{ margin: "0px", width: "50%", flexBasis: "51%" }}
-              id="standard-basic"
-              label="Additional Comments"
-              variant="standard"
-              multiline
-              rows={2}
-            />
-          </div>
+          <form name="order" action="/" method="POST" data-netlify="true">
+            <div
+              style={{
+                flexBasis: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                rowGap: "5px",
+                marginBottom: "15px",
+              }}
+            >
+              <input
+                type="hidden"
+                value={[
+                  petsContextValue,
+                  peopleContextValue,
+                  bGContext,
+                  canvasContextValue,
+                ]}
+              ></input>
 
-          <Link
-            style={{ marginBottom: "20px", textDecoration: "none" }}
-            href="../order"
-            passHref
-          >
+              <TextField
+                style={{ width: "50%", flexBasis: "51%" }}
+                id="standard-basic"
+                label="First Name"
+                variant="standard"
+              />
+              <TextField
+                style={{ width: "50%", flexBasis: "51%" }}
+                id="standard-basic"
+                label="Last Name"
+                variant="standard"
+              />
+              <TextField
+                style={{ width: "50%", flexBasis: "51%" }}
+                id="standard-basic"
+                label="Email Address"
+                variant="standard"
+              />
+              <TextField
+                style={{ margin: "0px", width: "50%", flexBasis: "51%" }}
+                id="standard-basic"
+                label="Additional Comments"
+                variant="standard"
+                multiline
+                rows={2}
+              />
+            </div>
+
+            {/* <Link
+              style={{ marginBottom: "20px", textDecoration: "none" }}
+              href="../order"
+              passHref
+            > */}
             <Button
+              type="submit"
               style={{
                 width: "",
                 height: "",
@@ -349,7 +361,8 @@ export default function Step4() {
               {" "}
               Place Order
             </Button>
-          </Link>
+            {/* </Link> */}
+          </form>
         </div>
 
         <div
