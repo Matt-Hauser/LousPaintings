@@ -140,6 +140,22 @@ export default function Step4() {
 
   console.log(singleColorPetPrices[canvasContext[0]]);
   console.log(currentTotal);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    console.log(myForm, formData);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <div
       className="pageContain"
@@ -298,6 +314,7 @@ export default function Step4() {
             method="POST"
             action="/gallery"
             data-netlify="true"
+            onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="contact" />
             <div
