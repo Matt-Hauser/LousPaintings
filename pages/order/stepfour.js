@@ -305,41 +305,47 @@ export default function Step4() {
                 marginBottom: "15px",
               }}
             >
-              <input
+              {/* <input
                 type="hidden"
-                value={[
+                name="orderDetails"
+                id="orderDetails"
+                value={
                   petsContextValue,
                   peopleContextValue,
                   bGContext,
                   canvasContextValue,
-                ]}
-              ></input>
+                }
+              ></input> */}
 
-              <TextField
+              <input
                 style={{ width: "50%", flexBasis: "51%" }}
                 id="standard-basic"
-                label="First Name"
-                variant="standard"
+                name="firstname"
+                // label="First Name"
+                // variant="standard"
               />
-              <TextField
+              <input
                 style={{ width: "50%", flexBasis: "51%" }}
                 id="standard-basic"
-                label="Last Name"
-                variant="standard"
+                name="lastname"
+                // label="Last Name"
+                // variant="standard"
               />
-              <TextField
+              <input
                 style={{ width: "50%", flexBasis: "51%" }}
                 id="standard-basic"
-                label="Email Address"
-                variant="standard"
+                name="email"
+                // label="Email Address"
+                // variant="standard"
               />
-              <TextField
+              <input
                 style={{ margin: "0px", width: "50%", flexBasis: "51%" }}
                 id="standard-basic"
-                label="Additional Comments"
-                variant="standard"
-                multiline
-                rows={2}
+                name="comments"
+                // label="Additional Comments"
+                // variant="standard"
+                // multiline
+                // rows={2}
               />
             </div>
 
