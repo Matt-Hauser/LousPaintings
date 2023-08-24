@@ -293,7 +293,12 @@ export default function Step4() {
         >
           {" "}
         </Typography> */}
-          <form name="order" action="/index" method="POST" data-netlify="true">
+          <form
+            name="order"
+            action="/gallery"
+            method="POST"
+            data-netlify="true"
+          >
             <div
               style={{
                 flexBasis: "100%",
