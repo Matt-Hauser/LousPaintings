@@ -306,17 +306,30 @@ export default function Step4() {
                 marginBottom: "15px",
               }}
             >
-              {/* <input
+              <input
                 type="hidden"
-                name="orderDetails"
+                name="Amount of Pets"
                 id="orderDetails"
-                value={
-                  petsContextValue,
-                  peopleContextValue,
-                  bGContext,
-                  canvasContextValue,
-                }
-              ></input> */}
+                value={petsContextValue}
+              ></input>
+              <input
+                type="hidden"
+                name="Amount of People"
+                id="orderDetails"
+                value={peopleContextValue}
+              ></input>
+              <input
+                type="hidden"
+                name="Background Type"
+                id="orderDetails"
+                value={bGContext}
+              ></input>
+              <input
+                type="hidden"
+                name="Canvas Size"
+                id="orderDetails"
+                value={canvasContext}
+              ></input>
 
               <TextField
                 style={{ width: "50%", flexBasis: "51%" }}
