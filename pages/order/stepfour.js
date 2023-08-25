@@ -322,13 +322,13 @@ export default function Step4() {
                 type="hidden"
                 name="Background Type"
                 id="orderDetails"
-                value={bGContext}
+                value={bGContext[0]}
               ></input>
               <input
                 type="hidden"
                 name="Canvas Size"
                 id="orderDetails"
-                value={canvasContext}
+                value={canvasContext[0]}
               ></input>
 
               <TextField
