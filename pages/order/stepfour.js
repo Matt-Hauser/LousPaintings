@@ -296,7 +296,7 @@ export default function Step4() {
           <form
             name="order"
             method="POST"
-            action="/order/index"
+            action="/gallery"
             data-netlify="true"
           >
             <input type="hidden" name="form-name" value="order" />
@@ -360,7 +360,7 @@ export default function Step4() {
               href="../order"
               passHref
             > */}
-            <button
+            <Button
               type="submit"
               style={{
                 width: "",
@@ -368,11 +368,11 @@ export default function Step4() {
                 position: "relative",
                 bottom: "8%",
               }}
-              // variant="contained"
+              variant="contained"
             >
               {" "}
               Place Order
-            </button>
+            </Button>
             {/* </Link> */}
           </form>
         </div>
