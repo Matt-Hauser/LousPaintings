@@ -140,22 +140,6 @@ export default function Step4() {
 
   console.log(singleColorPetPrices[canvasContext[0]]);
   console.log(currentTotal);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-    console.log(myForm, formData);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error));
-  };
-
   return (
     <div
       className="pageContain"
@@ -312,11 +296,10 @@ export default function Step4() {
           <form
             name="order"
             method="POST"
-            action="/gallery"
+            action="/order/index"
             data-netlify="true"
-            onSubmit={handleSubmit}
           >
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="order" />
             <div
               style={{
                 flexBasis: "100%",
@@ -377,7 +360,7 @@ export default function Step4() {
               href="../order"
               passHref
             > */}
-            <Button
+            <button
               type="submit"
               style={{
                 width: "",
@@ -385,11 +368,11 @@ export default function Step4() {
                 position: "relative",
                 bottom: "8%",
               }}
-              variant="contained"
+              // variant="contained"
             >
               {" "}
               Place Order
-            </Button>
+            </button>
             {/* </Link> */}
           </form>
         </div>
