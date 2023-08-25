@@ -293,12 +293,7 @@ export default function Step4() {
         >
           {" "}
         </Typography> */}
-          <form
-            name="order"
-            method="POST"
-            action="/gallery"
-            data-netlify="true"
-          >
+          <form name="order" method="POST" action="/index" data-netlify="true">
             <input type="hidden" name="form-name" value="order" />
             <div
               style={{
@@ -323,35 +318,35 @@ export default function Step4() {
                 }
               ></input> */}
 
-              <input
+              <TextField
                 style={{ width: "50%", flexBasis: "51%" }}
                 id="standard-basic"
                 name="firstname"
-                // label="First Name"
-                // variant="standard"
+                label="First Name"
+                variant="standard"
               />
-              <input
+              <TextField
                 style={{ width: "50%", flexBasis: "51%" }}
                 id="standard-basic"
                 name="lastname"
-                // label="Last Name"
-                // variant="standard"
+                label="Last Name"
+                variant="standard"
               />
-              <input
+              <TextField
                 style={{ width: "50%", flexBasis: "51%" }}
                 id="standard-basic"
                 name="email"
-                // label="Email Address"
-                // variant="standard"
+                label="Email Address"
+                variant="standard"
               />
-              <input
+              <TextField
                 style={{ margin: "0px", width: "50%", flexBasis: "51%" }}
                 id="standard-basic"
                 name="comments"
-                // label="Additional Comments"
-                // variant="standard"
-                // multiline
-                // rows={2}
+                label="Additional Comments"
+                variant="standard"
+                multiline
+                rows={2}
               />
             </div>
 
