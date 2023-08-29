@@ -93,6 +93,9 @@ function ResponsiveAppBar() {
           <Typography style={{ marginRight: "100px" }}>
             Hand-painted Portraits
           </Typography>
+          <Typography style={{ marginRight: "20px", fontSize: ".7em" }}>
+            Beta Version(Please view in Fullscreen)
+          </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page, idx) => (

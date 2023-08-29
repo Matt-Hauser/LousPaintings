@@ -22,7 +22,7 @@ export default function About() {
           marginTop: "40px",
         }}
         width={"50vw"}
-        height={"92vh"}
+        height={"80vh"}
       >
         <Image priority height={200} width={200} src="/louBio.jpg"></Image>
         <Typography fontFamily={"georgia"} variant="h2">

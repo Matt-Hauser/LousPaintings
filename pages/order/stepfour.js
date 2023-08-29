@@ -155,7 +155,14 @@ export default function Step4() {
         justifyContent: "center",
       }}
     >
-      <Box sx={{ width: "90%", alignSelf: "", marginTop: "100px" }}>
+      <Box
+        sx={{
+          width: "90%",
+          alignSelf: "",
+          marginTop: "100px",
+          marginBottom: "300px",
+        }}
+      >
         <Stepper nonLinear activeStep={activeStep}>
           {steps.map((label, index) => (
             <Step key={label} completed={completed[index]}>
@@ -238,7 +245,7 @@ export default function Step4() {
           style={{
             // position: "relative",
             zIndex: "2",
-            height: "450px",
+            height: "550px",
             width: "450px",
             backgroundColor: "rgba(255, 255, 255, 0.7)",
             borderRadius: "25px",
@@ -279,7 +286,19 @@ export default function Step4() {
             }}
             variant="h5"
           >
-            Upload Photo / Order Info
+            Order Info
+          </Typography>
+          <Typography
+            style={{
+              position: "relative",
+              textAlign: "center",
+              flexBasis: "100%",
+              fontFamily: "Montserrat Variable",
+            }}
+            variant="h8"
+          >
+            After placing your order, you will be contacted by email within 48
+            hours to send your photo and confirm payment
           </Typography>
           {/* <Typography
           style={{
@@ -332,28 +351,28 @@ export default function Step4() {
               ></input>
 
               <TextField
-                style={{ width: "50%", flexBasis: "51%" }}
+                style={{ width: "70%", flexBasis: "51%" }}
                 id="standard-basic"
                 name="firstname"
                 label="First Name"
                 variant="standard"
               />
               <TextField
-                style={{ width: "50%", flexBasis: "51%" }}
+                style={{ width: "70%", flexBasis: "51%" }}
                 id="standard-basic"
                 name="lastname"
                 label="Last Name"
                 variant="standard"
               />
               <TextField
-                style={{ width: "50%", flexBasis: "51%" }}
+                style={{ width: "70%", flexBasis: "51%" }}
                 id="standard-basic"
                 name="email"
                 label="Email Address"
                 variant="standard"
               />
               <TextField
-                style={{ margin: "0px", width: "50%", flexBasis: "51%" }}
+                style={{ marginLeft: "75px", width: "100%", flexBasis: "51%" }}
                 id="standard-basic"
                 name="comments"
                 label="Additional Comments"
@@ -375,6 +394,7 @@ export default function Step4() {
                 height: "",
                 position: "relative",
                 bottom: "8%",
+                marginLeft: "40px",
               }}
               variant="contained"
             >
